@@ -31,7 +31,6 @@ export default class Favorites extends React.Component {
     componentDidMount() {
         fetch('/get').then(res => res.json())
             .then(response => {
-                console.log(response)
                 this.setState({
                     list: response
                 })
