@@ -1,16 +1,16 @@
 const express = require('express');
 const app = express();
-const helmet = require('helmet');
+// const helmet = require('helmet');
 const bodyParser = require('body-parser');
 const fileHandler = require('fs');
 const path = require('path');
 const fetch = require('node-fetch');
 
-// secure express app with helmet
-app.use(helmet());
-app.use(helmet({
-    contentSecurityPolicy: false,
-  }));
+// // secure express app with helmet
+// app.use(helmet());
+// app.use(helmet({
+//     contentSecurityPolicy: false,
+//   }));
 
 // include body-parser to allow access to req.body object
 app.use(bodyParser.urlencoded({ extended: true }));
