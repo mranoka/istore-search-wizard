@@ -12,6 +12,7 @@ app.use(
     helmet.contentSecurityPolicy({
       directives: {
         "default-src": ["'self'"],
+        "img-src": ["*"],
         "script-src": ["https://affiliate.itunes.apple.com/resources/documentation/itunes-store-web-service-search-api/","'self'","'sha256-1kri9uKG6Gd9VbixGzyFE/kaQIHihYFdxFKKhgz3b80='"],
         "object-src": ["'none'"],
       },
@@ -91,7 +92,7 @@ app.get('/get', (req, res) => {
     fileHandler.readFile('favorites.json', (err, data) => {
         if (err) throw err;
         else
-            res.json(`${data}`);
+            res.send(data);
     })
 })
 
