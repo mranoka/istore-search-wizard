@@ -8,6 +8,9 @@ const fetch = require('node-fetch');
 
 // secure express app with helmet
 app.use(helmet());
+app.use(helmet({
+    contentSecurityPolicy: false,
+  }));
 
 // include body-parser to allow access to req.body object
 app.use(bodyParser.urlencoded({ extended: true }));
