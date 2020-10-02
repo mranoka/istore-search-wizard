@@ -12,7 +12,7 @@ app.use(
     helmet.contentSecurityPolicy({
       directives: {
         "default-src": ["'self'"],
-        "script-src": ["'sha256-1kri9uKG6Gd9VbixGzyFE/kaQIHihYFdxFKKhgz3b80='"],
+        "script-src": ["https://damp-plateau-63536.herokuapp.com/static/js/main.cf60cb83.chunk.js","https://damp-plateau-63536.herokuapp.com/static/js/2.803b16a6.chunk.js","'sha256-1kri9uKG6Gd9VbixGzyFE/kaQIHihYFdxFKKhgz3b80='"],
         "object-src": ["'none'"],
       },
     })
