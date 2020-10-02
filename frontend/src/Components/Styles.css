@@ -1,0 +1,109 @@
+/* Navbar */
+.nav-item {
+    list-style-type: none;
+}
+.nav-item a {
+    text-decoration: none;
+    font-size: 30px;
+    font-family: monospace, sans-serif;
+    font-weight: 900;
+    color: white;
+    background-color: hsl(240, 20%, 75%);
+    padding-left: 7px;
+    padding-right: 7px;
+    border-radius: 10px;
+    
+}
+.nav-item a:hover {
+    text-decoration: none;
+    color: black;
+}
+#nav-div {
+    margin-top: 12px;
+}
+
+/* Favorites.js */
+.fav-text li {
+    margin-top: 7px;
+    list-style-type: none;
+}
+.fav-container {
+    background-color:hsl(240, 22%, 90%);
+    padding-top: 10px;
+    border-radius: 10px;
+}
+hr {
+    position: relative;
+    top: 10px;
+    border: 10px solid black;
+}
+
+/* Home.js */
+#title-home {
+    position: relative;
+    left: -70px;
+    font-size: 50px;
+    font-weight: 900;
+
+}
+#buscar {
+    position: relative;
+    left: 45px;
+    color: hsl(105, 100%, 30%);
+}
+#bruja {
+    position: relative;
+    left: 85px;
+    color: hsl(240, 20%, 50%);
+}
+#istore {
+    background-color: black;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+    color: white;
+}
+#search-bar {
+    width: 400px;
+}
+#music-radio {
+    margin-left: 80px;
+}
+#music-radio, #books-radio {
+    font-weight: 900;
+    font-size: 18px;
+}
+.radio-boton {
+    margin-left: 10px;
+}
+
+#home-search {
+    font-weight: 900;
+    font-size: 35px;
+    width: 250px;
+}
+
+
+/* Music.js & Books.js */
+#album-art, #paperback {
+    height: 150px;
+    width: 150px;
+    
+}
+#music-container, #books-container {
+    margin-top: 60px;
+    box-shadow: 20px 20px 50px 10px hsl(209, 100%, 10%);
+    background-color: hsl(336, 100%, 55%);
+    border-radius: 20px;
+}
+#artistName, #author {
+    font-weight: 900;
+    font-size: 50px;
+}
+#item-stats, #stats-list, .fav-text {
+    font-weight: 600;
+}
+#card-body-music, #card-body-books {
+    background-color: hsl(240, 19%, 85%);
+    color: hsl(105, 100%, 30%);
+}
