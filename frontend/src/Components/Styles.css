@@ -39,6 +39,9 @@ hr {
 }
 
 /* Home.js */
+#categories {
+    margin-left: 7px;
+}
 #title-home {
     position: relative;
     left: -70px;

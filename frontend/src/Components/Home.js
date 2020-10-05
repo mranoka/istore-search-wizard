@@ -136,8 +136,7 @@ export default class Home extends React.Component {
                             <input id='search-bar' type='text' onChange={this.handleInput} value={this.state.search} placeholder='Search' />
                             <br />
                             <label>
-                                Please select category: <span></span>
-                            </label>
+                                Please select category: 
                             <select onClick={this.handleCategory} name='categories' id='categories'>
                                 <option>None</option>
                                 <option value='ebook'>Ebook</option>
@@ -148,6 +147,7 @@ export default class Home extends React.Component {
                                 <option value='tvShow'>TV Show</option>
                                 <option value='software'>Software</option>
                             </select>
+                            </label>
                             <br />
                             <small>Please select a category before searching</small>
                         </Card.Text>
