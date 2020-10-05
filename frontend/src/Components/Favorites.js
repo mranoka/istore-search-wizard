@@ -44,14 +44,14 @@ export default class Favorites extends React.Component {
                 <>
                     {item.albumArt &&
                         <>
-                            <Container className='fav-container'>
+                            <Container className='fav-container' key={Math.random()* 100}>
                                 <div>
                                     <img src={item.albumArt} alt={item.songName} />
                                 </div>
                                 <ul className='fav-text'>
-                                    <li key={index + 10} className='data-list'>{item.artistName}</li>
-                                    <li key={index + 12} className='data-list'>{item.songName}</li>
-                                    <li key={index + 14} className='data-list'>{item.releaseDate}</li>
+                                    <li key={Math.random() * index + 10} className='data-list'>{item.artistName}</li>
+                                    <li key={Math.random() * index + 12} className='data-list'>{item.songName}</li>
+                                    <li key={Math.random() * index + 14} className='data-list'>{item.releaseDate}</li>
                                 </ul>
                                 <Button onClick={this.handleDelete} value={item.songName} variant="danger">Delete</Button>
                                 <hr />
@@ -62,14 +62,14 @@ export default class Favorites extends React.Component {
                     {item.paperBack &&
 
                         <>
-                            <Container className='fav-container'>
+                            <Container className='fav-container' key={Math.random()* 10}>
                                 <div>
                                     <img src={item.paperBack} alt={item.title} />
                                 </div>
                                 <ul className='fav-text'>
-                                    <li key={index + 1} className='data-list'>{item.author}</li>
-                                    <li key={index + 2} className='data-list'>{item.title}</li>
-                                    <li key={index + 4} className='data-list'>{item.releaseDate}</li>
+                                    <li key={Math.random() * index + 1} className='data-list'>{item.author}</li>
+                                    <li key={Math.random() * index + 2} className='data-list'>{item.title}</li>
+                                    <li key={Math.random() * index + 4} className='data-list'>{item.releaseDate}</li>
                                 </ul>
                                 <Button onClick={this.handleDelete} value={item.title} variant="danger">Delete</Button>
                                 <hr />
