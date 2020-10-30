@@ -13,7 +13,7 @@ app.use(
       directives: {
         "default-src": ["'self'"],
         "img-src": ["*"],
-        "script-src": ["https://affiliate.itunes.apple.com/resources/documentation/itunes-store-web-service-search-api/","'self'","'sha256-1kri9uKG6Gd9VbixGzyFE/kaQIHihYFdxFKKhgz3b80='"],
+        "script-src": ["https://www.googletagmanager.com/gtag/js?id=G-VD2REF2G6D","https://affiliate.itunes.apple.com/resources/documentation/itunes-store-web-service-search-api/","'self'","'sha256-1kri9uKG6Gd9VbixGzyFE/kaQIHihYFdxFKKhgz3b80='"],
         "object-src": ["'none'"],
       },
     })
