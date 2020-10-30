@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactGA from 'react-ga';
 import Home from './Components/Home';
 import {
   BrowserRouter as Router,
@@ -8,7 +9,10 @@ import Navbar from './Components/Navbar';
 import Favorites from './Components/Favorites';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-
+function initializeReactGA() {
+  ReactGA.initialize('G-VD2REF2G6D');
+  ReactGA.pageview('/homepage');
+}
 
 function App() {
   return (
