@@ -11,7 +11,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function initializeReactGA() {
   ReactGA.initialize('G-VD2REF2G6D');
-  ReactGA.pageview('/homepage');
+  ReactGA.pageview('/');
 }
 
 function App() {
